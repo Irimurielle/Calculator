@@ -5,24 +5,10 @@ var add = function(number1, number2) {
   var number2 = parseInt(prompt("Enter another number:"));
   var result = add(number1, number2);
   alert(result);
-  var subtract = function(number1, number2) {
-    return number1 - number2;
-  };
-  var number1 = parseInt(prompt("Enter a number:"));
-  var number2 = parseInt(prompt("Enter another number:"));
-  var result = subtract(number1, number2);
-  alert(result);
-  var multiply = function(number1, number2) {
-    return number1 * number2;
-  };
-  var number1 = parseInt(prompt("Enter a number:"));
-  var number2 = parseInt(prompt("Enter another number:"));
-  var result = multiply(number1, number2);
-  alert(result);
-  var divide = function(number1, number2) {
-    return number1 / number2;
-  };
-  var number1 = parseInt(prompt("Enter a number:"));
-  var number2 = parseInt(prompt("Enter another number:"));
-  var result = divide(number1, number2);
-  alert(result);
+  var BMI = function (mass, height){
+    return mass / (height *  height);
+    }
+    var mass= parseInt(prompt("Enter your mass in kg"));
+    var height = parseFloat(prompt("Enter your height in cm"));
+    var result = BMI (mass, height);
+    alert("Your body mass index is :" + " " + result);
